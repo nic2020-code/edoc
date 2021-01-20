@@ -1948,11 +1948,19 @@
 }
 
 .add-receiver-area {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.flex-child {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 24px;
+}
+
+.add-margin {
+  margin-top: 20px;
 }
 
 .long-dashed-line {
@@ -2019,12 +2027,8 @@
 }
 
 .dropdown-toggle-4 {
-  margin-top: 25px;
-  padding: 8px 36px 8px 12px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgba(122, 134, 154, 0.5);
-  border-radius: 2px;
+  margin-top: 20px;
+  padding: 8px 0px 8px 12px;
 }
 
 .name-container {
@@ -2036,6 +2040,9 @@
   font-family: 'Helvetica neue', sans-serif;
   color: #7a869a;
   font-size: 13px;
+  padding: 8px 30px 8px 12px;
+  border: 1px solid #7A869A;
+  width: 200px;
 }
 
 .icon-2 {
@@ -2062,6 +2069,7 @@
 
 .checkbox-field {
   margin-bottom: 0px;
+  margin-left: 40px;
 }
 
 .checkbox-form {
@@ -2129,6 +2137,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-right: 40px;
+  padding-bottom: 80px;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
@@ -2139,6 +2148,7 @@
   width: 760px;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 0px;
 }
 
 .back-button {
