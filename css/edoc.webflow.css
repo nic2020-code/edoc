@@ -1954,14 +1954,6 @@
     margin-bottom: 24px;
 }
 
-.flex-child {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 20px;
-}
-
 .add-margin {
     margin-top: 20px;
 }
@@ -2523,6 +2515,22 @@
 
 .order-text-margin {
     margin-top: 5px;
+}
+
+.recipient1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.recipient {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: none;
+    margin-bottom: 20px;
 }
 
 .list-info {
