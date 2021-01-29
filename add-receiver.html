@@ -122,14 +122,15 @@
             </div>
             <form action="add-signature-field.html" class="add-receiver-area">
                 <div id="recipient-list">
-                    <div id="original-recipient-block" class="recipient1">
+                    <div id="original-recipient-block" class="recipient">
                         <div class="long-dashed-line">
                             <img src="images/Line 130.png" loading="lazy" alt="" />
                             <div class="order-rectangle">
-                                <input id="order-input" type="text" name="recipient[][order]" class="order-text w-hidden">
+                                <input id="order-input" type="text" name="recipient[][order]"
+                                    class="order-text w-hidden">
                             </div>
                             <img src="images/Line 130.png" loading="lazy" alt="" />
-                        </div class>
+                        </div>
                         <div class="add-receiver-container">
                             <div class="info-receiver">
                                 <div class="info-card">
@@ -138,8 +139,9 @@
                                             <div class="name-container">
                                                 <label for="name" class="label-text">Tên người nhận</label>
                                                 <div class="name-field">
-                                                    <input type="text" class="text-field-3 w-input" name="recipient[][name]"
-                                                    pattern="^[\p{L}\s-]+$" placeholder="Nhập tên người nhận" required />
+                                                    <input id="name" type="text" class="text-field-3 w-input"
+                                                        name="recipient[][name]" pattern="^[\p{L}\s-]+$"
+                                                        placeholder="Nhập tên người nhận" required />
                                                     <a href="#" class="eye-icon w-inline-block"><img
                                                             src="images/Contact-Icon.png" loading="lazy" alt=""
                                                             class="eye-image" /></a>
@@ -147,8 +149,9 @@
                                             </div>
                                             <div>
                                                 <label for="email" class="label-text">Email</label>
-                                                <input type="email" class="text-field-2 w-input" name="recipient[][email]"
-                                                    placeholder="Nhập Email người nhận" required />
+                                                <input id="email" type="email" class="text-field-2 w-input"
+                                                    name="recipient[][email]" placeholder="Nhập Email người nhận"
+                                                    required />
                                             </div>
                                         </div>
                                     </div>
@@ -165,55 +168,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="new-recipient-block" class="recipient">
-                        <div class="long-dashed-line">
-                            <img src="images/Line 130.png" loading="lazy" alt="" />
-                            <div class="order-rectangle">
-                                <input id="order-input" type="text" name="recipient[][order]" class="order-text w-hidden">
-                            </div>
-                            <img src="images/Line 130.png" loading="lazy" alt="" />
-                        </div class>
-                        <div class="add-receiver-container">
-                            <div class="info-receiver">
-                                <div class="info-card">
-                                    <div class="form-container">
-                                        <div class="form-block w-form">
-                                            <div class="name-container">
-                                                <label for="name" class="label-text">Tên người nhận</label>
-                                                <div class="name-field">
-                                                    <input type="text" class="text-field-3 w-input" name="recipient[][name]"
-                                                    pattern="^[\p{L}\s-]+$" placeholder="Nhập tên người nhận" required />
-                                                    <a href="#" class="eye-icon w-inline-block"><img
-                                                            src="images/Contact-Icon.png" loading="lazy" alt=""
-                                                            class="eye-image" /></a>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <label for="email" class="label-text">Email</label>
-                                                <input type="email" class="text-field-2 w-input" name="recipient[][email]"
-                                                    placeholder="Nhập Email người nhận" required />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-container">
-                                        <div class="w-dropdown">
-                                            <div class="dropdown-toggle-4 w-dropdown-toggle">
-                                                <select class="dropdown-text" name="recipient[][action]" id="role-sign">
-                                                    <option value="sign-now">Ký tài liệu</option>
-                                                    <option value="receive-a-copy">Nhận bản sao</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="delete-btn" class="delete-card">
-                                    <a href="#" class="delete-button">
-                                        <img class="delete-recipient-button" src="images/Delete-Icon.png"
-                                            loading="lazy" alt="" />
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="delete-card">
+                            <a href="#" class="delete-button">
+                                <img class="delete-recipient-button" src="images/Delete-Icon.png" loading="lazy"
+                                    alt="" />
+                            </a>
                         </div>
                     </div>
                 </div>

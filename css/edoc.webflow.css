@@ -2517,19 +2517,15 @@
     margin-top: 5px;
 }
 
-.recipient1 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 20px;
+.recipient:first-child .delete-card {
+    display: none;
 }
 
 .recipient {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: none;
+    display: flex;
     margin-bottom: 20px;
 }
 

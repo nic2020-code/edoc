@@ -1,19 +1,27 @@
 (function () {
     function initRecipientForm() {
-        var newRecipientBlock = document.querySelector("#new-recipient-block");
+        var originalRecipientBlock = document.querySelector("#original-recipient-block");
         var recipientList = document.querySelector("#recipient-list");
         var addRecipientButton = document.querySelector("#add-recipient-button");
         var addOrderRecipient = document.querySelector("#ordered-checkbox");
         var orderInput = document.querySelector("#order-input");
-        var deleteButton = document.querySelector('#delete-btn')
 
-        newRecipientBlock.removeAttribute("id");
+        originalRecipientBlock.removeAttribute("id");
 
         addRecipientButton.addEventListener("click", function () {
-            newRecipientBlock.style.display = ('flex');
-            var cloned = newRecipientBlock.cloneNode(true);
+            var count = recipientList.getElementsByClassName('recipient').length;
+            var cloned = originalRecipientBlock.cloneNode(true);
+            var elemOrder = cloned.querySelector('.order-text.w-hidden');
+            var elemEmail = cloned.querySelector('.text-field-2.w-input');
+            var elemName = cloned.querySelector('.text-field-3.w-input');
+            var elemSelection = cloned.querySelector('.dropdown-text');
+
+            elemOrder.setAttribute("id", "order-input" + count);
+            elemEmail.setAttribute("id", "email" + count);
+            elemName.setAttribute("id", "name" + count);
+            elemSelection.setAttribute("id", "role-sign" + count);
+
             recipientList.append(cloned);
-            deleteButton.classList.remove("w-hidden");
         });
 
         addOrderRecipient.addEventListener("click", function (event) {
