@@ -3,8 +3,7 @@
         var originalRecipientBlock = document.querySelector("#original-recipient-block");
         var recipientList = document.querySelector("#recipient-list");
         var addRecipientButton = document.querySelector("#add-recipient-button");
-        var addOrderRecipient = document.querySelector("#ordered-checkbox");
-        var orderInput = document.querySelector("#order-input");
+        var enableOrdering = document.querySelector("#enable-ordering");
 
         originalRecipientBlock.removeAttribute("id");
 
@@ -22,16 +21,27 @@
             elemSelection.setAttribute("id", "role-sign" + count);
 
             recipientList.append(cloned);
+
+            refreshOrderCheckboxVisibility();
         });
 
-        addOrderRecipient.addEventListener("click", function (event) {
+        enableOrdering.addEventListener("change", function (event) {
             event.stopPropagation();
 
-            if (addOrderRecipient.checked == true) {
-                orderInput.style.display = "block";
-            } else {
-                orderInput.style.display = "none";
-            }
+            var orderInputs = document.querySelectorAll(".order-text");
+
+            orderInputs.forEach(function (orderInput) {
+                if (enableOrdering.checked == true) {
+                    orderInput.classList.remove("w-hidden");
+                } else {
+                    orderInput.classList.add("w-hidden");
+                }
+            });
+            // if (enableOrdering.checked == true) {
+            //     orderInputs.style.display = "block";
+            // } else {
+            //     orderInputs.style.display = "none";
+            // }
         });
 
         recipientList.addEventListener("click", function (event) {
@@ -41,7 +51,21 @@
                 return;
 
             event.target.closest(".recipient").remove();
+            refreshOrderCheckboxVisibility();
         });
+
+        function countRecipientBlock() {
+            return document.querySelectorAll('.recipient').length;
+        }
+
+        function refreshOrderCheckboxVisibility() {
+            if (countRecipientBlock() > 1) {
+                enableOrdering.removeAttribute('disabled');
+            } else {
+                enableOrdering.setAttribute('disabled', 'disabled');
+            }
+        }
+
     }
 
     initRecipientForm();
