@@ -26,8 +26,20 @@
     });
 })();
 
-// (function showCertInfo() {
-//     var
-// })();
+(function showCertInfo() {
+
+    var signMethodSelection = document.querySelector("#sign-method");
+
+    var usbTokenInfo = document.querySelector(".usb-token");
+    var mobileSignInfo = document.querySelector(".mobile-sign");
+
+    signMethodSelection.addEventListener('change', function () {
+        var style = this.value == 'usb-token' ? 'block' : 'none';
+        usbTokenInfo.style.display = style;
+
+        var style = this.value == 'mobile-sign' ? 'block' : 'none';
+        mobileSignInfo.style.display = style;
+    });
+})();
 
 
