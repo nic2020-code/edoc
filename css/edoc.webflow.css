@@ -1688,7 +1688,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     background-color: rgba(35, 39, 42, 0.5);
-    opacity: 0;
+    opacity: 1;
 }
 
 .modal-form {
@@ -1740,6 +1740,10 @@ body {
     font-family: "Helvetica neue", sans-serif;
     font-size: 13px;
     font-weight: 500;
+}
+
+.sign-select {
+    padding: 12px 20px 12px 12px;
 }
 
 .add-contact-form {
