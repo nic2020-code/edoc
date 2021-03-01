@@ -1736,6 +1736,15 @@ body {
     margin-right: 16px;
 }
 
+.close {
+    display: flex;
+    align-items: center;
+}
+
+.close-icon {
+    margin-right: 20px;
+}
+
 .title-modal {
     font-family: "Helvetica neue", sans-serif;
     font-size: 13px;
