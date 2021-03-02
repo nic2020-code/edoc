@@ -26,20 +26,30 @@
     <div class="background-modal">
         <div class="modal-form">
             <div class="heading-modal align-right">
-                <div class="close-button"><img src="../images/Path-30115.png" loading="lazy" alt="Close Modal"></div>
+                <div class="close-button"><img src="images/Path-30115.png" loading="lazy" alt="Close Modal"></div>
             </div>
-            <div class="content-dialog">
+            <form class="content-dialog">
                 <div class="title-dialog">Ký Số</div>
                 <div class="digital-content">
                     <div class="sign-method">
                         <div class="selection-label">Chọn phương thức ký số:</div>
-                        <div></div>
+                        <select class="sign-select" id="sign-method">
+                            <option value="">Chọn phương thức ký</option>
+                            <option value="usb-token">Ký bằng USB Token</option>
+                            <option value="mobile-sign">Ký bằng Mobile Sign</option>
+                        </select>
+                    </div>
+                    <div class="digital-cert-icate">
+                        <div class="selection-label">Nhập mã đăng ký:</div>
+                        <input id="register-passcode" class="register-input" type="text">
                     </div>
                     <div class="digital-cert-icate">
                         <div class="selection-label">Chứng thư số:</div>
-                        <div></div>
+                        <select class="sign-select" id="digital-cert">
+                            <option value="digital-certificate">5402BC5ACE669C20150000000379</option>
+                        </select>
                     </div>
-                    <div class="usb-token">
+                    <div id="usb-token" class="usb-token">
                         <div class="certificate-text">
                             <div class="label">Tên chứng thư:</div>
                             <div class="label-content">Nguyễn Trần Văn Khanh</div>
@@ -57,7 +67,7 @@
                             <div class="label-content">Công ty Cổ phần Công nghệ thẻ NACENCOMM</div>
                         </div>
                     </div>
-                    <div class="mobile-sign">
+                    <div id="mobile-sign" class="mobile-sign">
                         <div class="certificate-text">
                             <div class="label">Tên chứng thư:</div>
                             <div class="label-content">Nguyễn Trần Văn Khanh</div>
@@ -83,14 +93,15 @@
                             <div class="label-content">Công ty Cổ phần Công nghệ thẻ NACENCOMM</div>
                         </div>
                     </div>
-                    <div class="qr-code"><img src="../images/QR-Code.png" loading="lazy" alt="" class="image-13">
+                    <div class="qr-code">
+                        <img src="images/QR-Code.png" loading="lazy" alt="" class="image-13">
                         <div class="hint-qr">Vui lòng quét mã QR Code để kết nối với tài khoản Mobile Sign</div>
                     </div>
                 </div>
                 <div class="center-element">
-                    <a href="#" class="button-6 w-button">Xác nhận</a>
+                    <button class="button-6 w-button" type="submit">Xác nhận</button>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="modal-form add-width">
             <div class="heading-modal reset">
@@ -263,9 +274,22 @@
                                     </a>
                                 </div>
                                 <div class="file-info-table">
-                                    <div class="info-signer-table">
-                                        <div class="table-wrapper">
-                                            <table class="full-width-table">
+                                    <div class="table-wrapper">
+                                        <table class="table-ui">
+                                            <colgroup>
+                                                <col width="30" />
+                                                <col width="50" />
+                                                <col width="100" />
+                                                <col width="200" />
+                                                <col width="300" />
+                                                <col width="250" />
+                                                <col width="150" />
+                                                <col width="150" />
+                                                <col width="130" />
+                                                <col width="130" />
+                                            </colgroup>
+
+                                            <thead>
                                                 <tr>
                                                     <th><input type="checkbox" /></th>
                                                     <th>STT</th>
@@ -278,6 +302,8 @@
                                                     <th>Lương SP</th>
                                                     <th>PC ăn trưa</th>
                                                 </tr>
+                                            </thead>
+                                            <tbody>
                                                 <tr>
                                                     <td><input type="checkbox" /></td>
                                                     <td>1</td>
@@ -339,7 +365,7 @@
                                                             <div>Nguyễn Trần Văn Khanh</div>
                                                         </div>
                                                     </td>
-                                                    <td>nguyentranvankhanh123@gmail…</td>
+                                                    <td>nguyentranvankhanh123@gmail.com</td>
                                                     <td>Ban quản lí và phát triển dự án</td>
                                                     <td>Nhân viên</td>
                                                     <td>4,750,000</td>
@@ -356,7 +382,7 @@
                                                             <div>Nguyễn Trần Văn Khanh</div>
                                                         </div>
                                                     </td>
-                                                    <td>nguyentranvankhanh123@gmail…</td>
+                                                    <td>nguyentranvankhanh123@gmail.com</td>
                                                     <td>Ban quản lí và phát triển dự án</td>
                                                     <td>Nhân viên</td>
                                                     <td>4,750,000</td>
@@ -373,7 +399,7 @@
                                                             <div>Nguyễn Trần Văn Khanh</div>
                                                         </div>
                                                     </td>
-                                                    <td>nguyentranvankhanh123@gmail…</td>
+                                                    <td>nguyentranvankhanh123@gmail.com</td>
                                                     <td>Ban quản lí và phát triển dự án</td>
                                                     <td>Nhân viên</td>
                                                     <td>4,750,000</td>
@@ -390,7 +416,7 @@
                                                             <div>Nguyễn Trần Văn Khanh</div>
                                                         </div>
                                                     </td>
-                                                    <td>nguyentranvankhanh123@gmail…</td>
+                                                    <td>nguyentranvankhanh123@gmail.com</td>
                                                     <td>Ban quản lí và phát triển dự án</td>
                                                     <td>Nhân viên</td>
                                                     <td>4,750,000</td>
@@ -407,16 +433,17 @@
                                                             <div>Nguyễn Trần Văn Khanh</div>
                                                         </div>
                                                     </td>
-                                                    <td>nguyentranvankhanh123@gmail…</td>
+                                                    <td>nguyentranvankhanh123@gmail.com</td>
                                                     <td>Ban quản lí và phát triển dự án</td>
                                                     <td>Nhân viên</td>
                                                     <td>4,750,000</td>
                                                     <td>1,000,000</td>
                                                     <td>550,000</td>
                                                 </tr>
-                                            </table>
-                                        </div>
+                                            </tbody>
+                                        </table>
                                     </div>
+
                                     <div class="pagination-table">
                                         <div class="pagination-block">
                                             <div class="pagination">

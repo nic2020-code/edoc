@@ -1746,7 +1746,7 @@ body {
 .modal-form {
     position: relative;
     z-index: 3;
-    display: none;
+    display: block;
     overflow: hidden;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -1761,7 +1761,6 @@ body {
 }
 
 .modal-form.add-width {
-    display: none;
     width: 925px;
     margin-top: 60px;
     margin-right: auto;
@@ -1830,6 +1829,10 @@ body {
 }
 
 .sign-select {
+    padding: 12px 20px 12px 12px;
+}
+
+.register-input {
     padding: 12px 20px 12px 12px;
 }
 
@@ -3024,7 +3027,7 @@ body {
     right: 0%;
     bottom: 0%;
     z-index: 8;
-    display: none;
+    display: block;
     background-image: url("../images/Blur-Background.png");
     background-position: 0px 0px;
     background-size: auto;
@@ -5349,13 +5352,13 @@ body {
     overflow: auto;
 }
 
-th:nth-child(1) {
+/* th:nth-child(1) {
     width: 10px;
 }
 
 th:nth-child(2) {
     width: 20px;
-}
+} */
 
 td {
     border-right: 1px solid #b4bac4;
@@ -5384,12 +5387,14 @@ th:last-child {
     border: none;
 }
 
-.full-width-table {
-    width: 100%;
+.table-wrapper {
+    overflow-x: scroll;
 }
 
-.table-wrapper {
-    overflow-x: auto;
+.table-ui {
+    min-width: 100%;
+    width: 0;
+    table-layout: fixed;
 }
 
 .person-name {
