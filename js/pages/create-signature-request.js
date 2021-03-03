@@ -15,10 +15,10 @@
             var elemName = cloned.querySelector('.text-field-3.w-input');
             var elemSelection = cloned.querySelector('.dropdown-text');
 
-            elemOrder.setAttribute("id", "order-input" + count);
-            elemEmail.setAttribute("id", "email" + count);
-            elemName.setAttribute("id", "name" + count);
-            elemSelection.setAttribute("id", "role-sign" + count);
+            elemOrder.setAttribute("id", "order-input" + count);
+            elemEmail.setAttribute("id", "email" + count);
+            elemName.setAttribute("id", "name" + count);
+            elemSelection.setAttribute("id", "role-sign" + count);
 
             recipientList.append(cloned);
 

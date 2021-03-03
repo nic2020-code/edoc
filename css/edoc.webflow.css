@@ -1761,6 +1761,7 @@ body {
 }
 
 .modal-form.add-width {
+    display: none;
     width: 925px;
     margin-top: 60px;
     margin-right: auto;
