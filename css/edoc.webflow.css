@@ -2368,7 +2368,7 @@ body {
 }
 
 .function-signature {
-    width: 250px;
+    width: 320px;
     margin-right: 70px;
 }
 
@@ -4465,6 +4465,10 @@ body {
 .template-image {
     width: 100%;
     margin-right: 60px;
+}
+
+.image-16 {
+    min-width: 100%;
 }
 
 .template-image.remove-margin {
