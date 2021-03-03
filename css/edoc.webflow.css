@@ -3997,10 +3997,35 @@ body {
     align-items: center;
 }
 
+.serial-input {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: none;
+    margin-top: 40px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.regis-input {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: none;
+    margin-top: 40px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
 .button-text {
     font-family: "Helvetica neue", sans-serif;
     color: #253858;
     font-size: 13px;
+    margin-right: 16px;
 }
 
 .setting-button {
