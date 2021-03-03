@@ -1,12 +1,12 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Tue Mar 02 2021 02:22:13 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="602f7425a6fd4b48f1d1116f" data-wf-site="5fc9e8d6d24a3a09aec5cdc3">
+<html data-wf-page="60370ac4006e6d73c189e5a1" data-wf-site="5fc9e8d6d24a3a09aec5cdc3">
 
 <head>
     <meta charset="utf-8">
-    <title>Password</title>
-    <meta content="Password" property="og:title">
-    <meta content="Password" property="twitter:title">
+    <title>Transaction History</title>
+    <meta content="Transaction History" property="og:title">
+    <meta content="Transaction History" property="twitter:title">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
     <link href="../css/normalize.css" rel="stylesheet" type="text/css">
@@ -95,24 +95,51 @@
             <a href="../setting/digital-signature.html" class="menu-item-link w-inline-block">
                 <div class="menu-item-text">Chữ ký số</div>
             </a>
-            <a href="../setting/password.html" aria-current="page" class="menu-item-link w-inline-block w--current">
+            <a href="../setting/password.html" class="menu-item-link w-inline-block">
                 <div class="menu-item-text">Mật khẩu</div>
             </a>
-            <a href="../setting/plan-and-billing.html" class="menu-item-link w-inline-block">
+            <a href="../setting/plan-and-billing.html" class="menu-item-link current-page w-inline-block">
                 <div class="menu-item-text">Gói dịch vụ</div>
             </a>
         </div>
         <div class="setting-content">
-            <div class="title-body">Mật khẩu</div>
-            <div class="subtitle-body">Chủ động quản lý quyền riêng tư và bảo mật của bạn. Giữ cho mật khẩu của
-                bạn<br>an toàn và luôn được cập nhật.</div>
-            <div class="add-signature-button">
-                <div class="button-text">Lần cuối thay đổi 12/10/2020</div>
-                <div class="password-divider"></div>
-                <a href="../change-password.html" class="password-button w-inline-block"><img
-                        src="../images/Lock-Icon.png" loading="lazy" alt="" class="icon-button">
-                    <div class="password-text">Đổi mật khẩu</div>
-                </a>
+            <a href="../setting/plan-and-billing.html" class="previous-page w-inline-block"><img
+                    src="../images/Arrow Left Icon.png" loading="lazy" alt="" class="arrow-left">
+                <div class="back-page-text">Lịch sử giao dịch</div>
+            </a>
+            <div class="history-block">
+                <div class="label-table">
+                    <div class="w-layout-grid grid-2">
+                        <div class="text-of-table add-margin">Gói dịch vụ</div>
+                        <div class="text-of-table">Thời hạn</div>
+                        <div class="text-of-table">Tổng tiền</div>
+                        <div class="text-of-table">Hóa đơn</div>
+                    </div>
+                </div>
+                <div class="table-content">
+                    <div class="transaction-card">
+                        <div class="w-layout-grid transaction-grid">
+                            <div class="transaction-text">Gói cơ bản</div>
+                            <div class="transaction-date">18/01/2020 - 18/02/2021</div>
+                            <div class="transaction-date">250.000 VNĐ</div>
+                            <a href="#" class="view-invoice w-inline-block"><img src="../images/View Einvoice.png"
+                                    loading="lazy" alt="" class="view-icon">
+                                <div class="view-text">Xem hóa đơn</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="transaction-card">
+                        <div class="w-layout-grid transaction-grid">
+                            <div class="transaction-text">Gói dùng thử</div>
+                            <div class="transaction-date">18/12/2020 - 18/01/2021</div>
+                            <div class="transaction-date">0</div>
+                            <a href="#" class="view-invoice w-inline-block"><img src="../images/View Einvoice.png"
+                                    loading="lazy" alt="" class="view-icon">
+                                <div class="view-text">Xem hóa đơn</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

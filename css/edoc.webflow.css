@@ -2081,9 +2081,9 @@ body {
     margin-bottom: 24px;
 }
 
-.add-margin {
-    margin-top: 20px;
-}
+/* .add-margin {
+    margin-top: 5px;
+} */
 
 .long-dashed-line {
     display: -webkit-box;
@@ -4261,7 +4261,7 @@ body {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: none;
+    display: flex;
     width: 606px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -4648,7 +4648,7 @@ body {
     padding: 32px 16px;
     border-radius: 4px;
     background-color: #fcfdff;
-    background-image: url("../images/Card-Graphic.png");
+    background-image: url("../images/Card Graphic.png");
     background-position: 35% 5%;
     background-size: auto;
     background-repeat: no-repeat;
