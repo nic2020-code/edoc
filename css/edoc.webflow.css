@@ -302,6 +302,16 @@ body {
     border-radius: 2px;
 }
 
+.reset-margin {
+    margin-bottom: 0;
+    padding-left: 13px;
+    color: #333333;
+}
+
+.space-block {
+    height: 24px;
+}
+
 .form-field::-webkit-input-placeholder {
     font-family: "Helvetica neue", sans-serif;
     color: #7a869a;
@@ -408,6 +418,13 @@ body {
     justify-content: flex-start;
 }
 
+.error {
+    font-size: 12px;
+    padding: 6px 0 4px;
+    color: red;
+    display: block;
+}
+
 .field-2 {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -445,7 +462,7 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 61px;
+    margin-top: 35px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
