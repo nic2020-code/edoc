@@ -4888,7 +4888,7 @@ body {
     top: 8%;
     right: 0%;
     bottom: auto;
-    display: none;
+    display: block;
     margin-right: 15px;
 }
 
