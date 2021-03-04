@@ -2152,10 +2152,6 @@ body {
 .dropdown-toggle-4 {
     margin-top: 25px;
     padding: 8px 36px 8px 12px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(122, 134, 154, 0.5);
-    border-radius: 2px;
 }
 
 .name-container {
@@ -2312,7 +2308,6 @@ body {
     display: block;
     width: 32px;
     height: 32px;
-    padding-top: 5px;
     background-color: #f5db8e;
 }
 
@@ -2648,7 +2643,6 @@ body {
 }
 
 .order-text {
-    display: none;
     font-family: "Helvetica neue", sans-serif;
     color: #253858;
     text-align: center;
