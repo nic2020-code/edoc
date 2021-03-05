@@ -30,7 +30,7 @@
                             tính một cách chuẩn xác nhất!</div>
                     </div>
                     <div class="information-form w-form">
-                        <form name="Infomation-Form" method="post" action="" onsubmit="return validateForm()">
+                        <form name="Infomation-Form" method="post" action="" onsubmit="validateForm()">
                             <div class="two-field">
                                 <div class="field-1">
                                     <label class="form-label">Họ và tên*</label>
@@ -53,14 +53,13 @@
                             <label class="form-label">Mã số thuế</label>
                             <input type="text" class="form-field w-input" name="MST" placeholder="Nhập mã số thuế">
                             <label class="w-checkbox term-checkbox">
-                                <input type="checkbox" name="checkbox" class="w-checkbox-input" value="">
+                                <input type="checkbox" name="checkbox" class="w-checkbox-input" value="" required>
                                 <span class="checkbox-label w-form-label">Tôi đã đọc và đồng ý với các <a href="#"
                                         class="link">Điều khoản &amp; Chính sách</a> của <a href="#"
-                                        class="link">Ca2.Signhub</a></span></label><span class="error"></span>
+                                        class="link">Ca2.Signhub</a></span></label>
                             <div class="two-button">
                                 <a href="sign-in.html" class="ghost-button w-button">Quay lại</a>
-                                <!-- <button>Đăng ký</button> -->
-                                <input type="submit" value="Đăng ký" data-wait=""
+                                <input type="submit" value="Đăng ký" id="sign-up"
                                     class="form-button button-color add-width w-button">
                             </div>
                         </form>
@@ -78,7 +77,7 @@
         crossorigin="anonymous"></script>
     <script src="js/webflow.js" type="text/javascript"></script>
     <script>
-        const validateForm = () => {
+        function validateForm() {
             const form = document.forms['Infomation-Form'],
                 inputs = [...form.getElementsByTagName('input')],
                 errors = [...form.getElementsByClassName('error')],
