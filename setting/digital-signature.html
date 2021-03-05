@@ -118,15 +118,17 @@
                 </select>
             </div>
 
-            <div id="serial-input" class="serial-input">
+            <form action="" name="serial-form" method="POST" id="serial-input" class="serial-input">
                 <div class="button-text">Nhập serial:</div>
-                <input id="serial-passcode" class="register-input" type="text">
-            </div>
+                <input id="serial-passcode" class="register-input" type="text" required>
+                <input type="submit" class="form-button button-color w-button" value="Gửi">
+            </form>
 
-            <div id="register-input" class="regis-input">
+            <form action="" name="register-form" method="POST" id="register-input" class="regis-input">
                 <div class="button-text">Nhập mã đăng ký:</div>
-                <input id="serial-passcode" class="register-input" type="text">
-            </div>
+                <input id="serial-passcode" class="register-input" type="text" required>
+                <input type="submit" class="form-button button-color w-button" value="Gửi">
+            </form>
 
             <div class="digital-certificate">
                 <div class="cert-text">Thông tin chứng thư số</div>

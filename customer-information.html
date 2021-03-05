@@ -53,14 +53,14 @@
                             <label class="form-label">Mã số thuế</label>
                             <input type="text" class="form-field w-input" name="MST" placeholder="Nhập mã số thuế">
                             <label class="w-checkbox term-checkbox">
-                                <input type="checkbox" name="checkbox" class="w-checkbox-input" value="" required>
+                                <input id="myCheckbox" type="checkbox" name="checkbox" class="w-checkbox-input">
                                 <span class="checkbox-label w-form-label">Tôi đã đọc và đồng ý với các <a href="#"
                                         class="link">Điều khoản &amp; Chính sách</a> của <a href="#"
                                         class="link">Ca2.Signhub</a></span></label>
                             <div class="two-button">
                                 <a href="sign-in.html" class="ghost-button w-button">Quay lại</a>
-                                <input type="submit" value="Đăng ký" id="sign-up"
-                                    class="form-button button-color add-width w-button">
+                                <button class="form-button button-color add-width w-button" id="myButton"
+                                    disabled>Đăng ký</button>
                             </div>
                         </form>
                     </div>
@@ -90,13 +90,19 @@
 
                 // validate required
                 if (!input.value) {
-                    errors[index].innerText = ('*Trường bắt buộc phải nhập')
+                    errors[index].innerHTML = ('*Trường bắt buộc phải nhập')
                     countErrors++
                 }
             })
 
             return countErrors === 0
         }
+
+        (function submitButtonHandling() {
+            $('#myCheckbox').click(function () {
+                $('#myButton').prop("disabled", !$("#myCheckbox").prop("checked"));
+            })
+        })();
     </script>
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 </body>
