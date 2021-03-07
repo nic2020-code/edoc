@@ -204,6 +204,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 1040px;
+    position: relative;
     margin-right: auto;
     margin-left: auto;
     -webkit-box-orient: horizontal;
@@ -222,6 +223,11 @@ body {
     border-radius: 16px;
     background-color: #fff;
     box-shadow: -1px 4px 8px 0 rgba(0, 32, 120, 0.1);
+}
+
+.card.password-card {
+    width: 570px;
+    height: 656px;
 }
 
 .image {
@@ -250,6 +256,14 @@ body {
     margin-left: 0px;
 }
 
+.content-container.top-password {
+    margin-top: 44px;
+}
+
+.password-logo {
+    margin-bottom: 44px;
+}
+
 .heading-card {
     font-family: "Helvetica neue", sans-serif;
     color: #091e42;
@@ -263,6 +277,10 @@ body {
     color: #505f79;
     font-size: 14px;
     font-weight: 400;
+}
+
+.heading-card.new-password-heading {
+    margin-top: 64px;
 }
 
 .subtitle-card.center {
@@ -288,6 +306,15 @@ body {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+}
+
+.form.new-password-margin-form {
+    margin-top: 32px;
+}
+
+.forgot-password-link {
+    text-decoration: none;
+    color: #2684ff;
 }
 
 .form-field {
@@ -364,6 +391,7 @@ body {
 
 .text-link.reset-margin {
     margin-top: 0px;
+    color: #7a869a;
 }
 
 .link {
@@ -571,6 +599,11 @@ body {
     text-align: center;
 }
 
+.form-button.button-color.button-width {
+    width: 100%;
+    text-align: center;
+}
+
 .form-button.button-color.add-width.add-border-radius {
     margin-bottom: 32px;
     border-radius: 8px;
@@ -762,6 +795,18 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.text-link-wrapper.block-position {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
 }
 
 .text-block-2 {
