@@ -4951,7 +4951,7 @@ body {
     top: 8%;
     right: 0%;
     bottom: auto;
-    display: block;
+    display: none;
     margin-right: 15px;
 }
 
