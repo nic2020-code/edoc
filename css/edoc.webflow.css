@@ -869,11 +869,13 @@ body {
 }
 
 .image-3 {
-    display: none;
+    display: block;
+    margin-top: 32px;
 }
 
 .image-4 {
-    display: none;
+    display: block;
+    margin-top: 32px;
 }
 
 .sticky-nav {
@@ -2332,7 +2334,7 @@ body {
 
 .add-receiver-button.add-width {
     width: 760px;
-    margin-right: auto;
+    margin-right: 100px;
     margin-left: auto;
     padding-bottom: 0px;
 }
@@ -2711,6 +2713,10 @@ body {
     text-align: center;
     width: 32px;
     height: 32px;
+}
+
+.order-text.multiple-order {
+    margin-top: 5px;
 }
 
 .order-text-margin {
