@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <div class="background-modal" style="display: block;">
+    <div class="background-modal">
         <div class="contact-form">
             <div class="heading-modal">
                 <div class="contact-text">Danh bạ</div>
@@ -39,7 +39,7 @@
             </div>
             <div class="contact-form-body">
                 <div class="contact-form-menu">
-                    <a href="#" class="group-menu">
+                    <a href="#" class="group-menu active">
                         <div class="menu-text-link">Tất cả liên hệ</div>
                     </a>
 
@@ -52,13 +52,53 @@
                 <div class="contact-form-content">
                     <div class="search-contact">
                         <form action="/search" class="search-block w-form">
-                            <input type="search" class="search-input-block w-input" maxlength="256" name="query"
-                                placeholder="Tìm kiếm tài liệu" id="search" required=""><input type="submit" value="Tìm"
-                                class="search-icon-button w-button">
+                            <input type="search" class="search-input-block w-input" name="query"
+                                placeholder="Tìm kiếm tài liệu" id="search" required="">
+                                <a href="" class="search-icon-button"><img src="/images/search-icon.png" alt=""></a>
                         </form>
                     </div>
                     <div class="contact-table">
-                        <div>Table</div>
+                        <table class="contact-table-ui">
+
+                            <colgroup>
+                                <col width="30" />
+                                <col width="150" />
+                                <col width="100" />
+                                <col width="100" />
+                                <col width="100" />
+                            </colgroup>
+
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Họ và tên</th>
+                                    <th>Email</th>
+                                    <th>Nhóm</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="radio" name="" id=""></td>
+                                    <td>
+                                        Nguyen Tran Van Khanh
+                                    </td>
+                                    <td>nguyenvankhanh123@gmail.com</td>
+                                    <td>NACENCOMM</td>
+                                    <td><a href="">Xoá</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td><input type="radio" name="" id=""></td>
+                                    <td>
+                                        Nguyen Tran Van Khanh
+                                    </td>
+                                    <td>nguyenvankhanh123@gmail.com</td>
+                                    <td>NACENCOMM</td>
+                                    <td><a href="">Xoá</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

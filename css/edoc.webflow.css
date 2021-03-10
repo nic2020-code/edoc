@@ -1855,7 +1855,8 @@ body {
 
 .contact-form-menu {
     background-color: #fbfbfb;
-    width: 203px;
+    width: 240px;
+    padding: 10px;
 }
 
 .contact-form-content {
@@ -1887,7 +1888,14 @@ body {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
-    padding: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.group-menu.active {
+    background-color: #f8faff;
+    border: 1px solid #b3d4ff;
+    border-radius: 3px;
 }
 
 .modal-form.add-width {
@@ -5269,6 +5277,7 @@ body {
 
 .search-input-block {
     width: 264px;
+    height: 28px;
     margin-bottom: 0px;
     border-style: solid;
     border-width: 1px;
@@ -5283,8 +5292,7 @@ body {
     right: 0%;
     bottom: auto;
     margin-top: 3px;
-    margin-right: 3px;
-    padding: 6px 9px;
+    margin-right: 6px;
     background-color: #fff;
     color: #080594;
 }
@@ -5535,7 +5543,7 @@ td {
 }
 
 td:nth-child(2) {
-    text-align: center;
+    text-align: left;
 }
 
 td:last-child {
@@ -5561,6 +5569,41 @@ th:last-child {
     min-width: 100%;
     width: 0;
     table-layout: fixed;
+}
+
+.contact-table-ui {
+    min-width: 100%;
+    border-spacing: 0 1em;
+}
+
+.contact-table-ui td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-right: none;
+    font-family: "Helvetica neue", sans-serif;
+}
+
+.contact-table-ui td:last-child {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.contact-table-ui td a {
+    text-decoration: none;
+    color: #de350b;
+}
+
+.contact-table-ui th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: transparent;
+    border-bottom: 1px solid #eee;
+    border-right: none;
+    font-family: "Helvetica neue", sans-serif;
+    font-weight: 400;
+    color: #505f79;
 }
 
 .person-name {
