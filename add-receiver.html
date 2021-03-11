@@ -23,6 +23,23 @@
                     (o.DocumentTouch && c instanceof DocumentTouch)) &&
                 (n.className += t + "touch");
         })(window, document);
+
+        (
+            function showContactModal() {
+
+                var contactButton = document.querySelector("#contact-button");
+                var contactModal = document.querySelector(".background-modal");
+
+                contactButton.addEventListener("click", function () {
+
+                    if (contactModal.style.display === 'none') {
+                        contactModal.style.display = 'block';
+                    } else {
+                        contactModal.style.display = 'none';
+                    }
+                });
+
+        })();
     </script>
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="images/webclip.png" rel="apple-touch-icon" />
@@ -240,7 +257,7 @@
                                                     <input id="name" type="text" class="text-field-3 w-input"
                                                         name="recipient[][name]" pattern="^[\p{L}\s-]+$"
                                                         placeholder="Nhập tên người nhận" required />
-                                                    <a href="#" class="eye-icon w-inline-block"><img
+                                                    <a id="contact-button" href="#" class="eye-icon w-inline-block"><img
                                                             src="images/Contact-Icon.png" loading="lazy" alt=""
                                                             class="eye-image" /></a>
                                                 </div>
